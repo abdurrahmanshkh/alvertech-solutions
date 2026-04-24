@@ -57,7 +57,7 @@ const founders = [
     years: "35+",
     description:
       "Expert in establishing U.S. FDA-approved plants for sterile dosage forms. Extensive end-to-end project execution from conceptual design to regulatory approvals.",
-    image: "/images/about-manoj.webp",
+    image: "/manoj.jpg",
     linkedin: "https://www.linkedin.com/in/manoj-patel-885a3b61/",
   },
   {
@@ -67,7 +67,7 @@ const founders = [
     years: "24+",
     description:
       "Transforming complex formulations into commercial successes through integrated R&D, manufacturing, and supply chain excellence.",
-    image: "/images/about-gurudev.webp",
+    image: "/gurudev.jpg",
     linkedin: "https://www.linkedin.com/in/gurudev-suryavanshi-94149321/",
   },
   {
@@ -77,7 +77,7 @@ const founders = [
     years: "35+",
     description:
       "Distinguished pharmaceutical educator ensuring methodologies are rooted in rigorous scientific principles and institutional standards.",
-    image: "/images/about-inamdar.webp",
+    image: "/inamdar.jpg",
     linkedin: "https://www.linkedin.com/in/bhaisaheb-inamdar-711b25402/",
   },
 ];
