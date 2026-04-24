@@ -1,4 +1,7 @@
-import type { Metadata } from "next";
+"use client";
+
+import Image from "next/image";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -12,11 +15,7 @@ import {
   Clock,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "The Alvertech Advantage",
-  description:
-    "Precision engineered for pharmaceutical excellence — speed to market, regulatory certainty, cost optimization, and holistic expertise.",
-};
+
 
 const advantages = [
   {
@@ -88,13 +87,24 @@ export default function AdvantagePage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="gradient-hero relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full bg-tech-blue blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/3 w-72 h-72 rounded-full bg-growth-green blur-3xl" />
+      <section className="relative overflow-hidden bg-midnight-blue">
+        <div className="absolute inset-0">
+          <Image 
+            src="/images/advantage-hero.webp" 
+            alt="High-tech sterile pharmaceutical manufacturing environment" 
+            fill 
+            className="object-cover opacity-40 mix-blend-luminosity" 
+            priority 
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight-blue/90" />
         </div>
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-          <div className="text-center max-w-3xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="text-center max-w-3xl mx-auto"
+          >
             <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4">
               Why Choose Us
             </p>
@@ -110,7 +120,7 @@ export default function AdvantagePage() {
               resilience, regulatory compliance, and accelerated market entry for
               high-stakes clinical and commercial manufacturing.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -118,11 +128,15 @@ export default function AdvantagePage() {
       <section className="bg-white section-padding">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {advantages.map((adv) => {
+            {advantages.map((adv, idx) => {
               const Icon = adv.icon;
               return (
-                <div
+                <motion.div
                   key={adv.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.4, delay: idx * 0.1 }}
                   className="bg-white rounded p-6 border border-border-light card-shadow hover:card-shadow-hover hover:-translate-y-1 transition-all duration-300"
                 >
                   <div
@@ -134,7 +148,7 @@ export default function AdvantagePage() {
                   <p className="text-sm text-soft-gray leading-relaxed">
                     {adv.description}
                   </p>
-                </div>
+                </motion.div>
               );
             })}
           </div>
@@ -157,11 +171,15 @@ export default function AdvantagePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {methodology.map((item) => {
+            {methodology.map((item, idx) => {
               const Icon = item.icon;
               return (
-                <div
+                <motion.div
                   key={item.step}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.4, delay: idx * 0.1 }}
                   className="bg-white rounded p-6 border border-border-light relative"
                 >
                   <span className="text-6xl font-black text-tech-blue/10 absolute top-4 right-4 leading-none">
@@ -174,7 +192,7 @@ export default function AdvantagePage() {
                   <p className="text-sm text-soft-gray leading-relaxed">
                     {item.description}
                   </p>
-                </div>
+                </motion.div>
               );
             })}
           </div>

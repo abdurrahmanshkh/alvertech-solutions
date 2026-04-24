@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   MapPin,
   Phone,
@@ -112,32 +114,47 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
             {/* ── Left Column: Contact Details ── */}
             <div className="lg:col-span-2 space-y-8">
-              {/* Headquarters */}
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded bg-tech-blue/10 flex items-center justify-center">
-                    <Building2 size={20} className="text-tech-blue" />
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+              >
+                {/* Headquarters */}
+                <div className="mb-8">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded bg-tech-blue/10 flex items-center justify-center">
+                      <Building2 size={20} className="text-tech-blue" />
+                    </div>
+                    <h2 className="text-xl font-bold">Headquarters</h2>
                   </div>
-                  <h2 className="text-xl font-bold">Headquarters</h2>
-                </div>
-                <div className="flex gap-3 text-sm text-soft-gray pl-1">
-                  <MapPin
-                    size={18}
-                    className="shrink-0 mt-0.5 text-tech-blue"
-                  />
-                  <div>
-                    <p className="font-medium text-charcoal">
-                      Alvertech Solutions
-                    </p>
-                    <p>Greenfield Residency, Flat No. 203,</p>
-                    <p>Plot No. 03, Sector 35-I,</p>
-                    <p>Kharghar, Navi Mumbai – 410210</p>
-                    <p>Maharashtra, India</p>
+                  <div className="flex gap-3 text-sm text-soft-gray pl-1 mb-6">
+                    <MapPin
+                      size={18}
+                      className="shrink-0 mt-0.5 text-tech-blue"
+                    />
+                    <div>
+                      <p className="font-medium text-charcoal">
+                        Alvertech Solutions
+                      </p>
+                      <p>Greenfield Residency, Flat No. 203,</p>
+                      <p>Plot No. 03, Sector 35-I,</p>
+                      <p>Kharghar, Navi Mumbai – 410210</p>
+                      <p>Maharashtra, India</p>
+                    </div>
+                  </div>
+                  
+                  {/* Map Image */}
+                  <div className="relative w-full h-48 rounded overflow-hidden border border-border-light shadow-sm">
+                    <Image
+                      src="/images/contact-map.webp"
+                      alt="Map showing Alvertech Solutions location in Navi Mumbai"
+                      fill
+                      className="object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-500"
+                    />
                   </div>
                 </div>
-              </div>
 
-              {/* Scientific Leadership */}
+                {/* Scientific Leadership */}
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded bg-growth-green/10 flex items-center justify-center">
@@ -186,10 +203,16 @@ export default function ContactPage() {
                   ))}
                 </div>
               </div>
+              </motion.div>
             </div>
 
             {/* ── Right Column: Form ── */}
-            <div className="lg:col-span-3">
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="lg:col-span-3"
+            >
               <div className="bg-slate-bg rounded-lg p-6 md:p-8 border border-border-light">
                 <h2 className="text-2xl font-bold mb-2">
                   Request Consultation
@@ -332,7 +355,7 @@ export default function ContactPage() {
                   </form>
                 )}
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

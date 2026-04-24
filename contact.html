@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - Alvertech Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#c3c6d3",
+                        "surface-tint": "#005bc0",
+                        "on-surface": "#111c2c",
+                        "on-secondary-fixed": "#00210a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#dee8ff",
+                        "secondary-container": "#5cfd8a",
+                        "on-primary-fixed-variant": "#004493",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#005322",
+                        "surface-bright": "#f9f9ff",
+                        "secondary": "#006d30",
+                        "on-secondary-container": "#007232",
+                        "inverse-on-surface": "#ebf1ff",
+                        "primary-fixed-dim": "#adc7ff",
+                        "inverse-primary": "#adc7ff",
+                        "primary-fixed": "#d8e2ff",
+                        "inverse-surface": "#263142",
+                        "surface-container": "#e7eeff",
+                        "on-background": "#111c2c",
+                        "tertiary": "#585c67",
+                        "surface-variant": "#d8e3fa",
+                        "tertiary-fixed": "#dfe2ef",
+                        "surface-dim": "#cfdaf1",
+                        "on-tertiary-container": "#fefcff",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#fefcff",
+                        "on-tertiary-fixed-variant": "#434751",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#717480",
+                        "surface-container-highest": "#d8e3fa",
+                        "secondary-fixed": "#65ff8f",
+                        "outline-variant": "#c1c6d7",
+                        "on-tertiary-fixed": "#181b25",
+                        "on-surface-variant": "#414754",
+                        "surface-container-low": "#f0f3ff",
+                        "outline": "#717786",
+                        "on-primary-fixed": "#001a41",
+                        "surface": "#f9f9ff",
+                        "on-error": "#ffffff",
+                        "primary": "#0059bb",
+                        "primary-container": "#0070ea",
+                        "background": "#f9f9ff",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#3be274"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Public Sans"],
+                        "display": ["Public Sans"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full border-b border-slate-200 shadow-sm bg-white/95 backdrop-blur-sm z-50">
+<div class="flex items-center justify-between px-8 py-4 max-w-[1280px] mx-auto w-full">
+<div class="flex items-center gap-2 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="science" data-weight="fill" style="font-variation-settings: 'FILL' 1;">science</span>
+<span class="text-xl font-bold text-slate-900 tracking-tighter">Alvertech Solutions</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-sans tracking-tight text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition-colors duration-200 px-3 py-2 rounded-lg" href="#">Home</a>
+<a class="font-sans tracking-tight text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition-colors duration-200 px-3 py-2 rounded-lg" href="#">Services</a>
+<a class="font-sans tracking-tight text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition-colors duration-200 px-3 py-2 rounded-lg" href="#">Leadership</a>
+<a class="font-sans tracking-tight text-sm font-medium text-blue-600 border-b-2 border-blue-600 pb-1 px-3 py-2 rounded-t-lg bg-slate-50 transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="hidden md:flex items-center gap-2 bg-gradient-to-r from-primary to-primary-container text-on-primary font-medium text-sm px-6 py-2.5 rounded hover:opacity-90 transition-opacity">
+<span>Get a Consultation</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined text-2xl" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col w-full">
+<!-- Hero Section -->
+<section class="w-full bg-surface-container-low pt-24 pb-16 px-8 relative overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary via-background to-background"></div>
+<div class="max-w-[1280px] mx-auto relative z-10 text-center">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-on-surface tracking-tight mb-6 font-display">
+                    Partner with Industry Experts
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto font-body leading-relaxed">
+                    Connect with our scientific leadership team to discuss strategic solutions, compliance, and growth for your pharmaceutical enterprise.
+                </p>
+</div>
+</section>
+<!-- Contact Split Section -->
+<section class="w-full max-w-[1280px] mx-auto px-8 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+<!-- Left: Contact Info -->
+<div class="lg:col-span-5 flex flex-col gap-12">
+<!-- Headquarters -->
+<div>
+<h2 class="text-2xl font-bold text-on-surface mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="corporate_fare" data-weight="fill" style="font-variation-settings: 'FILL' 1;">corporate_fare</span>
+                        Global Headquarters
+                    </h2>
+<div class="bg-surface border border-outline-variant p-6 rounded-xl shadow-[0_4px_24px_rgba(10,14,23,0.04)]">
+<address class="not-italic text-on-surface-variant space-y-2">
+<p class="font-medium text-on-surface text-lg">Alvertech Solutions India Pvt Ltd.</p>
+<p>Office no 2, Second Floor,</p>
+<p>Shelton Cubix Sector-15,</p>
+<p>CBD Belapur, Navi Mumbai 400614.</p>
+<div class="pt-4 mt-4 border-t border-outline-variant/50">
+<a class="flex items-center gap-3 text-primary hover:text-primary-container transition-colors group" href="mailto:info@alvertechsolutions.com">
+<span class="material-symbols-outlined text-xl" data-icon="mail">mail</span>
+<span class="font-medium group-hover:underline">info@alvertechsolutions.com</span>
+</a>
+</div>
+</address>
+</div>
+</div>
+<!-- Key Contacts -->
+<div>
+<h2 class="text-2xl font-bold text-on-surface mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="group" data-weight="fill" style="font-variation-settings: 'FILL' 1;">group</span>
+                        Scientific Leadership
+                    </h2>
+<div class="grid gap-6">
+<!-- Contact 1 -->
+<div class="bg-surface border border-outline-variant p-5 rounded-xl flex items-start gap-4 shadow-[0_4px_24px_rgba(10,14,23,0.04)] hover:shadow-[0_8px_32px_rgba(10,14,23,0.08)] transition-shadow">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center shrink-0">
+<span class="text-primary font-bold text-lg">MP</span>
+</div>
+<div>
+<h3 class="font-bold text-on-surface text-lg">Manoj Patel</h3>
+<p class="text-sm text-on-surface-variant mb-3">Director</p>
+<a class="flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors" href="tel:+919920150247">
+<span class="material-symbols-outlined text-base" data-icon="call">call</span>
+                                    +91 9920150247
+                                </a>
+</div>
+</div>
+<!-- Contact 2 -->
+<div class="bg-surface border border-outline-variant p-5 rounded-xl flex items-start gap-4 shadow-[0_4px_24px_rgba(10,14,23,0.04)] hover:shadow-[0_8px_32px_rgba(10,14,23,0.08)] transition-shadow">
+<div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center shrink-0">
+<span class="text-primary font-bold text-lg">IB</span>
+</div>
+<div>
+<h3 class="font-bold text-on-surface text-lg">Inamdar Bhaisaheb</h3>
+<p class="text-sm text-on-surface-variant mb-3">Director</p>
+<a class="flex items-center gap-2 text-sm text-on-surface-variant hover:text-primary transition-colors" href="tel:+918097967969">
+<span class="material-symbols-outlined text-base" data-icon="call">call</span>
+                                    +91 8097967969
+                                </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Lead Gen Form -->
+<div class="lg:col-span-7">
+<div class="bg-surface border border-outline-variant rounded-xl p-8 lg:p-10 shadow-[0_8px_40px_rgba(10,14,23,0.06)] relative overflow-hidden">
+<!-- Decor strip -->
+<div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary to-primary-container"></div>
+<h2 class="text-2xl font-bold text-on-surface mb-2">Request Consultation</h2>
+<p class="text-on-surface-variant mb-8 text-sm">Provide your details below, and our specialized team will contact you to discuss your strategic needs.</p>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Name -->
+<div class="space-y-2">
+<label class="block text-sm font-medium text-on-surface" for="name">Full Name <span class="text-error">*</span></label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline text-xl" data-icon="person">person</span>
+</div>
+<input class="block w-full pl-10 pr-3 py-2.5 border border-outline-variant rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary focus:border-primary transition-shadow sm:text-sm" id="name" name="name" placeholder="Dr. Jane Smith" required="" type="text"/>
+</div>
+</div>
+<!-- Company -->
+<div class="space-y-2">
+<label class="block text-sm font-medium text-on-surface" for="company">Company / Organization <span class="text-error">*</span></label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline text-xl" data-icon="domain">domain</span>
+</div>
+<input class="block w-full pl-10 pr-3 py-2.5 border border-outline-variant rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary focus:border-primary transition-shadow sm:text-sm" id="company" name="company" placeholder="PharmaCorp Inc." required="" type="text"/>
+</div>
+</div>
+</div>
+<!-- Email -->
+<div class="space-y-2">
+<label class="block text-sm font-medium text-on-surface" for="email">Corporate Email <span class="text-error">*</span></label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline text-xl" data-icon="mail">mail</span>
+</div>
+<input class="block w-full pl-10 pr-3 py-2.5 border border-outline-variant rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary focus:border-primary transition-shadow sm:text-sm" id="email" name="email" placeholder="jane.smith@company.com" required="" type="email"/>
+</div>
+</div>
+<!-- Project Type -->
+<div class="space-y-2">
+<label class="block text-sm font-medium text-on-surface" for="project">Area of Interest</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline text-xl" data-icon="category">category</span>
+</div>
+<select class="block w-full pl-10 pr-10 py-2.5 border border-outline-variant rounded-lg bg-surface-container-lowest text-on-surface focus:ring-2 focus:ring-primary focus:border-primary transition-shadow sm:text-sm appearance-none" id="project" name="project">
+<option disabled="" selected="" value="">Select a consultancy focus...</option>
+<option value="regulatory">Regulatory Compliance Strategy</option>
+<option value="quality">Quality Assurance &amp; Auditing</option>
+<option value="rd">R&amp;D Process Optimization</option>
+<option value="supply">Supply Chain Integrity</option>
+<option value="other">Other Inquiry</option>
+</select>
+<div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline text-xl" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Message -->
+<div class="space-y-2">
+<label class="block text-sm font-medium text-on-surface" for="message">Project Details</label>
+<textarea class="block w-full p-3 border border-outline-variant rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary focus:border-primary transition-shadow sm:text-sm" id="message" name="message" placeholder="Briefly describe your objectives or challenges..." rows="4"></textarea>
+</div>
+<!-- Submit -->
+<div class="pt-4">
+<button class="w-full flex justify-center items-center gap-2 bg-gradient-to-r from-primary to-primary-container text-on-primary py-3 px-4 rounded-lg font-bold shadow-md hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" type="submit">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+                                Submit Inquiry
+                            </button>
+<p class="text-xs text-center text-outline mt-4">
+                                By submitting, you agree to our privacy policy regarding the handling of sensitive corporate data.
+                            </p>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="w-full bg-surface-container-lowest border-t border-outline-variant mt-8">
+<div class="max-w-[1280px] mx-auto px-8 py-12">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="location_on" data-weight="fill" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<h2 class="text-xl font-bold text-on-surface">Navi Mumbai Operations Center</h2>
+</div>
+<!-- Map Placeholder Container -->
+<div class="w-full h-[400px] md:h-[500px] bg-surface-variant rounded-xl border border-outline-variant overflow-hidden relative shadow-sm group">
+<!-- In a real scenario, an iframe or map integration goes here -->
+<!-- We use an image as a placeholder per instructions -->
+<img alt="Map showing CBD Belapur area in Navi Mumbai" class="w-full h-full object-cover opacity-80 mix-blend-multiply filter grayscale-[30%]" data-alt="stylized modern minimal map interface showing streets of navi mumbai india with subtle blue accent markers and clean gray roads" data-location="Navi Mumbai" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEjhLTKYeipiC2f5yPdLw1F-9ZVGGhKnkmk6NzvtreMf6iLx5fqKD1Qa-vSBW_FkWWDbXFO1wOcn6xP8WzsVXE33fO0PEjsYZkYmWtStP7Mgnhtp-Gny7d251g7y3leXefH1_lvKnAG0R3ceM_cUoxMhNJkSoPFT3DW4cQiizBi_fb2ptmoGmpHS08KUhT4tcMKraX0gREReg7DokZLHzlPYEkRNMBPu6-OlcZyr2YUmtDJ3JdHVrUjQJ24C4yqKNUq7RrXhd-xQw"/>
+<!-- Overlay Marker -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="bg-primary text-on-primary p-3 rounded-full shadow-lg mb-2 relative animate-bounce">
+<span class="material-symbols-outlined" data-icon="corporate_fare" data-weight="fill" style="font-variation-settings: 'FILL' 1;">corporate_fare</span>
+<!-- Arrow pointing down -->
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[8px] border-t-primary"></div>
+</div>
+<div class="bg-surface-container-lowest/90 backdrop-blur px-4 py-2 rounded-lg border border-outline-variant shadow-md text-sm font-bold text-on-surface text-center whitespace-nowrap">
+                            Alvertech Solutions<br/>
+<span class="font-normal text-xs text-on-surface-variant">CBD Belapur</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-100 bg-slate-50">
+<div class="max-w-[1280px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="flex flex-col gap-4">
+<span class="text-lg font-bold text-slate-800 flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-600" data-icon="science" data-weight="fill" style="font-variation-settings: 'FILL' 1;">science</span>
+                    Alvertech Solutions
+                </span>
+<p class="font-sans text-xs text-slate-500">© 2024 Alvertech Solutions. Scientific Precision. Strategic Growth.</p>
+</div>
+<div class="flex flex-wrap gap-6 text-sm">
+<a class="font-sans text-xs text-slate-500 hover:text-blue-600 hover:underline transition-all cursor-pointer" href="#">Services</a>
+<a class="font-sans text-xs text-slate-500 hover:text-blue-600 hover:underline transition-all cursor-pointer" href="#">Leadership</a>
+<a class="font-sans text-xs text-blue-600 hover:underline transition-all cursor-pointer font-medium" href="#">Contact</a>
+<a class="font-sans text-xs text-slate-500 hover:text-blue-600 hover:underline transition-all cursor-pointer" href="#">Privacy Policy</a>
+<a class="font-sans text-xs text-slate-500 hover:text-blue-600 hover:underline transition-all cursor-pointer" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

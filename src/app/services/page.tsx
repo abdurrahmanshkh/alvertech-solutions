@@ -1,4 +1,7 @@
-import type { Metadata } from "next";
+"use client";
+
+import Image from "next/image";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import {
   CheckCircle,
@@ -11,11 +14,7 @@ import {
   Globe,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Services",
-  description:
-    "End-to-end pharmaceutical consultancy services: Facility Design & Project Execution, Manufacturing & Operations, and Product Development Support.",
-};
+
 
 const complianceBadges = [
   { label: "U.S. FDA", icon: Shield },
@@ -126,21 +125,43 @@ export default function ServicesPage() {
           <div className="absolute bottom-1/3 left-1/3 w-64 h-64 rounded-full bg-growth-green blur-3xl" />
         </div>
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-          <div className="text-center max-w-3xl mx-auto">
-            <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4">
-              Our Services
-            </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              End-to-End Solutions from{" "}
-              <span className="text-tech-blue">
-                Concept to Commercialization
-              </span>
-            </h1>
-            <p className="mt-6 text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
-              Driving pharmaceutical and biotech innovation with strategic
-              engineering, rigorous compliance, and scalable manufacturing
-              solutions.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="max-w-3xl z-10"
+            >
+              <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4">
+                Our Services
+              </p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                End-to-End Solutions from{" "}
+                <span className="text-tech-blue">
+                  Concept to Commercialization
+                </span>
+              </h1>
+              <p className="mt-6 text-lg text-white/70 leading-relaxed max-w-2xl">
+                Driving pharmaceutical and biotech innovation with strategic
+                engineering, rigorous compliance, and scalable manufacturing
+                solutions.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              className="relative h-[400px] lg:h-[600px] w-full rounded-xl overflow-hidden border border-white/10 shadow-2xl"
+            >
+              <Image
+                src="/images/services-cleanroom.webp"
+                alt="High-tech modern pharmaceutical cleanroom facility"
+                fill
+                className="object-cover mix-blend-luminosity opacity-80"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-midnight-blue via-transparent to-tech-blue/20 mix-blend-overlay"></div>
+            </motion.div>
           </div>
 
           {/* Compliance Badges */}
@@ -172,27 +193,61 @@ export default function ServicesPage() {
           >
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               {/* Section Header */}
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded bg-tech-blue/10 flex items-center justify-center">
-                  <Icon size={24} className="text-tech-blue" />
-                </div>
-                <div>
-                  <p className="text-xs font-semibold text-tech-blue uppercase tracking-widest">
-                    Service {idx + 1} of 3
+              <div className="flex flex-col lg:flex-row gap-12 items-start mb-12">
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.5 }}
+                  className="lg:w-1/2"
+                >
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-12 h-12 rounded bg-tech-blue/10 flex items-center justify-center">
+                      <Icon size={24} className="text-tech-blue" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-tech-blue uppercase tracking-widest">
+                        Service {idx + 1} of 3
+                      </p>
+                    </div>
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    {service.title}
+                  </h2>
+                  <p className="text-lg text-soft-gray leading-relaxed mb-6">
+                    {service.description}
                   </p>
-                </div>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="lg:w-1/2 h-[300px] relative rounded-xl overflow-hidden border border-border-light shadow-md"
+                >
+                  <Image
+                    src={
+                      idx === 0
+                        ? "/images/services-blueprint.webp"
+                        : idx === 1
+                        ? "/images/services-robotics.webp"
+                        : "/images/services-hands.webp"
+                    }
+                    alt={service.title}
+                    fill
+                    className="object-cover"
+                  />
+                </motion.div>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                {service.title}
-              </h2>
-              <p className="text-lg text-soft-gray max-w-3xl leading-relaxed mb-10">
-                {service.description}
-              </p>
 
               {/* Sub-Categories */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {service.categories.map((cat) => (
-                  <div
+                {service.categories.map((cat, catIdx) => (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ duration: 0.4, delay: catIdx * 0.1 }}
                     key={cat.heading}
                     className={`${
                       isAlt ? "bg-white" : "bg-slate-bg"
@@ -218,7 +273,7 @@ export default function ServicesPage() {
                         </li>
                       ))}
                     </ul>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>

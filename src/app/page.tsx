@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import {
   CheckCircle,
   ArrowRight,
@@ -54,7 +57,7 @@ const founders = [
     years: "35+",
     description:
       "Expert in establishing U.S. FDA-approved plants for sterile dosage forms. Extensive end-to-end project execution from conceptual design to regulatory approvals.",
-    image: "/manoj.jpg",
+    image: "/images/about-manoj.webp",
     linkedin: "https://www.linkedin.com/in/manoj-patel-885a3b61/",
   },
   {
@@ -64,7 +67,7 @@ const founders = [
     years: "24+",
     description:
       "Transforming complex formulations into commercial successes through integrated R&D, manufacturing, and supply chain excellence.",
-    image: "/gurudev.jpg",
+    image: "/images/about-gurudev.webp",
     linkedin: "https://www.linkedin.com/in/gurudev-suryavanshi-94149321/",
   },
   {
@@ -74,7 +77,7 @@ const founders = [
     years: "35+",
     description:
       "Distinguished pharmaceutical educator ensuring methodologies are rooted in rigorous scientific principles and institutional standards.",
-    image: "/inamdar.jpg",
+    image: "/images/about-inamdar.webp",
     linkedin: "https://www.linkedin.com/in/bhaisaheb-inamdar-711b25402/",
   },
 ];
@@ -97,35 +100,53 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
-          <div className="max-w-3xl">
-            <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up">
-              Pharmaceutical Consultancy
-            </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight animate-fade-in-up animate-delay-100">
-              Transforming Pharmaceutical Visions into{" "}
-              <span className="text-tech-blue">
-                Operational Realities
-              </span>
-            </h1>
-            <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-2xl animate-fade-in-up animate-delay-200">
-              Engineering excellence in clinical and commercial manufacturing.
-              We bridge the gap between scientific innovation and FDA-compliant,
-              scalable facility design.
-            </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 animate-fade-in-up animate-delay-300">
-              <Link
-                href="/services"
-                className="gradient-btn text-white font-semibold px-8 py-4 rounded text-center transition-all duration-200 hover:shadow-xl hover:shadow-tech-blue/20 inline-flex items-center justify-center gap-2"
-              >
-                Explore Services <ArrowRight size={18} />
-              </Link>
-              <Link
-                href="/contact"
-                className="border border-white/20 text-white font-semibold px-8 py-4 rounded text-center transition-all duration-200 hover:bg-white/10 hover:border-white/40"
-              >
-                Contact Us
-              </Link>
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="max-w-3xl z-10"
+            >
+              <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4">
+                Pharmaceutical Consultancy
+              </p>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
+                Transforming Pharmaceutical Visions into{" "}
+                <span className="text-tech-blue">Operational Realities</span>
+              </h1>
+              <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-2xl">
+                Engineering excellence in clinical and commercial manufacturing. We bridge the gap between scientific innovation and FDA-compliant, scalable facility design.
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/services"
+                  className="gradient-btn text-white font-semibold px-8 py-4 rounded text-center transition-all duration-200 hover:shadow-xl hover:shadow-tech-blue/20 inline-flex items-center justify-center gap-2"
+                >
+                  Explore Services <ArrowRight size={18} />
+                </Link>
+                <Link
+                  href="/contact"
+                  className="border border-white/20 text-white font-semibold px-8 py-4 rounded text-center transition-all duration-200 hover:bg-white/10 hover:border-white/40"
+                >
+                  Meet the Team
+                </Link>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              className="relative h-[400px] lg:h-[600px] w-full rounded-xl overflow-hidden border border-white/10 shadow-2xl"
+            >
+              <Image
+                src="/images/hero.webp"
+                alt="Abstract representation of pharmaceutical research with glass vials and blue lighting reflecting scientific precision"
+                fill
+                className="object-cover mix-blend-luminosity opacity-80"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-midnight-blue via-transparent to-tech-blue/20 mix-blend-overlay"></div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -176,11 +197,16 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {capabilities.map((cap) => {
+            {capabilities.map((cap, index) => {
               const Icon = cap.icon;
               return (
-                <div
+                <motion.div
                   key={cap.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  whileHover={{ y: -5 }}
                   className="bg-white rounded p-8 border border-border-light card-shadow hover:card-shadow-hover transition-shadow duration-300"
                 >
                   <div className="w-12 h-12 rounded bg-tech-blue/10 flex items-center justify-center mb-6">
@@ -204,7 +230,7 @@ export default function Home() {
                   >
                     Learn More <ArrowRight size={14} />
                   </Link>
-                </div>
+                </motion.div>
               );
             })}
           </div>
@@ -226,9 +252,13 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {founders.map((founder) => (
-              <div
+            {founders.map((founder, index) => (
+              <motion.div
                 key={founder.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white rounded border border-border-light card-shadow hover:card-shadow-hover transition-all duration-300 overflow-hidden group"
               >
                 <div className="relative h-72 overflow-hidden">
@@ -263,7 +293,7 @@ export default function Home() {
                     LinkedIn
                   </a>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
           <div className="text-center mt-10">

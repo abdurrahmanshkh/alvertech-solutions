@@ -1,5 +1,7 @@
-import type { Metadata } from "next";
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { Award, Briefcase, GraduationCap } from "lucide-react";
 
 function LinkedInIcon({ size = 16 }: { size?: number }) {
@@ -10,11 +12,7 @@ function LinkedInIcon({ size = 16 }: { size?: number }) {
   );
 }
 
-export const metadata: Metadata = {
-  title: "About Us — Leadership",
-  description:
-    "Meet the three pillars of Alvertech Solutions — Manoj Patel, Gurudev Suryavanshi, and Inamdar Bhaisaheb. Nearly a century of combined pharmaceutical expertise.",
-};
+
 
 const founders = [
   {
@@ -24,7 +22,7 @@ const founders = [
     years: "35+",
     yearsLabel: "Years at Cipla",
     icon: Building2Icon,
-    image: "/manoj.jpg",
+    image: "/images/about-manoj.webp",
     linkedin: "https://www.linkedin.com/in/manoj-patel-885a3b61/",
     phone: "+91 98203 38978",
     email: "patelmanojc@gmail.com",
@@ -52,7 +50,7 @@ const founders = [
     years: "24+",
     yearsLabel: "Years at USV Private Limited",
     icon: OperationsIcon,
-    image: "/gurudev.jpg",
+    image: "/images/about-gurudev.webp",
     linkedin: "https://www.linkedin.com/in/gurudev-suryavanshi-94149321/",
     phone: "+91 99877 48837",
     email: "gurudev.suryavanshi1682@gmail.com",
@@ -80,7 +78,7 @@ const founders = [
     years: "35+",
     yearsLabel: "Years of Academic Service",
     icon: AcademicIcon,
-    image: "/inamdar.jpg",
+    image: "/images/about-inamdar.webp",
     linkedin: "https://www.linkedin.com/in/bhaisaheb-inamdar-711b25402/",
     phone: "+91 70209 92919",
     email: "bbidpham@gmail.com",
@@ -117,12 +115,24 @@ export default function AboutPage() {
   return (
     <>
       {/* ── Hero Banner ── */}
-      <section className="gradient-hero relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/4 right-1/3 w-96 h-96 rounded-full bg-tech-blue blur-3xl" />
+      <section className="relative overflow-hidden bg-midnight-blue">
+        <div className="absolute inset-0">
+          <Image 
+            src="/images/about-lab.webp" 
+            alt="Modern pharmaceutical laboratory" 
+            fill 
+            className="object-cover opacity-40 mix-blend-luminosity" 
+            priority 
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight-blue/90" />
         </div>
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-          <div className="text-center max-w-3xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="text-center max-w-3xl mx-auto"
+          >
             <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4">
               About Alvertech Solutions
             </p>
@@ -137,7 +147,7 @@ export default function AboutPage() {
               foundation, operational scale-up expertise, and unparalleled
               regulatory facility design.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -181,8 +191,12 @@ export default function AboutPage() {
               const Icon = founder.icon;
               const isReversed = idx % 2 !== 0;
               return (
-                <div
+                <motion.div
                   key={founder.name}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
                   className={`flex flex-col ${
                     isReversed ? "lg:flex-row-reverse" : "lg:flex-row"
                   } gap-8 lg:gap-12 items-start`}
@@ -285,7 +299,7 @@ export default function AboutPage() {
                       </a>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>

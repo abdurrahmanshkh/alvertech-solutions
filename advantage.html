@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Alvertech Advantage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#c3c6d3",
+                        "surface-tint": "#005bc0",
+                        "on-surface": "#111c2c",
+                        "on-secondary-fixed": "#00210a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#dee8ff",
+                        "secondary-container": "#5cfd8a",
+                        "on-primary-fixed-variant": "#004493",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#005322",
+                        "surface-bright": "#f9f9ff",
+                        "secondary": "#006d30",
+                        "on-secondary-container": "#007232",
+                        "inverse-on-surface": "#ebf1ff",
+                        "primary-fixed-dim": "#adc7ff",
+                        "inverse-primary": "#adc7ff",
+                        "primary-fixed": "#d8e2ff",
+                        "inverse-surface": "#263142",
+                        "surface-container": "#e7eeff",
+                        "on-background": "#111c2c",
+                        "tertiary": "#585c67",
+                        "surface-variant": "#d8e3fa",
+                        "tertiary-fixed": "#dfe2ef",
+                        "surface-dim": "#cfdaf1",
+                        "on-tertiary-container": "#fefcff",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#fefcff",
+                        "on-tertiary-fixed-variant": "#434751",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#717480",
+                        "surface-container-highest": "#d8e3fa",
+                        "secondary-fixed": "#65ff8f",
+                        "outline-variant": "#c1c6d7",
+                        "on-tertiary-fixed": "#181b25",
+                        "on-surface-variant": "#414754",
+                        "surface-container-low": "#f0f3ff",
+                        "outline": "#717786",
+                        "on-primary-fixed": "#001a41",
+                        "surface": "#f9f9ff",
+                        "on-error": "#ffffff",
+                        "primary": "#0059bb",
+                        "primary-container": "#0070ea",
+                        "background": "#f9f9ff",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#3be274"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "header": "5rem",
+                        "gutter": "1.5rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Public Sans", "sans-serif"],
+                        "display": ["Public Sans", "sans-serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95 backdrop-blur-sm z-50 shadow-sm">
+<div class="flex items-center justify-between px-8 py-4 max-w-[1280px] mx-auto w-full">
+<div class="flex items-center gap-8">
+<a class="text-xl font-bold text-slate-900 dark:text-white tracking-tighter hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors duration-200 ease-in-out" href="#">
+                    Alvertech Solutions
+                </a>
+<div class="hidden md:flex items-center gap-6 font-sans tracking-tight text-sm font-medium">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors duration-200 ease-in-out p-2 rounded-DEFAULT" href="#">Home</a>
+<a class="text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 pb-1 p-2 rounded-DEFAULT bg-slate-50 dark:bg-slate-900" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors duration-200 ease-in-out p-2 rounded-DEFAULT" href="#">Leadership</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors duration-200 ease-in-out p-2 rounded-DEFAULT" href="#">Contact</a>
+</div>
+</div>
+<div class="hidden md:flex items-center">
+<button class="bg-primary text-on-primary font-label text-sm font-medium py-2 px-4 rounded-lg hover:bg-primary-container transition-colors duration-200 shadow-sm">
+                    Get a Consultation
+                </button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col items-center w-full">
+<!-- Hero Section -->
+<section class="w-full max-w-[1280px] mx-auto px-8 py-20 md:py-32 flex flex-col items-start gap-6 border-b border-surface-variant">
+<div class="flex items-center gap-2 text-primary font-label text-sm font-semibold tracking-wider uppercase mb-2">
+<span class="material-symbols-outlined text-base">science</span>
+                The Alvertech Advantage
+            </div>
+<h1 class="font-display text-4xl md:text-6xl font-extrabold text-on-surface tracking-tight max-w-4xl leading-tight">
+                Precision Engineered for Pharmaceutical Excellence
+            </h1>
+<p class="font-body text-lg text-on-surface-variant max-w-3xl leading-relaxed mt-4">
+                We bridge the gap between scientific innovation and commercial reality. Our data-driven methodologies ensure operational resilience, regulatory compliance, and accelerated market entry for high-stakes clinical and commercial manufacturing.
+            </p>
+</section>
+<!-- 4-Column Value Proposition Grid -->
+<section class="w-full max-w-[1280px] mx-auto px-8 py-24 bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1: Speed to Market -->
+<div class="flex flex-col bg-surface-container-lowest border border-[#E2E8F0] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary text-2xl">rocket_launch</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-3">Speed to Market</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        Accelerate product lifecycles through optimized tech transfer and lean manufacturing protocols, reducing time-to-clinic by an average of 22%.
+                    </p>
+</div>
+<!-- Card 2: Regulatory Certainty -->
+<div class="flex flex-col bg-surface-container-lowest border border-[#E2E8F0] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary text-2xl">verified</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-3">Regulatory Certainty</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        Pre-emptive compliance strategies engineered for FDA/EMA standards. Our absolute precision minimizes audit findings and submission delays.
+                    </p>
+</div>
+<!-- Card 3: Cost Optimization -->
+<div class="flex flex-col bg-surface-container-lowest border border-[#E2E8F0] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary text-2xl">trending_down</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-3">Cost Optimization</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        Data-driven yield maximization and supply chain derisking. We identify inefficiencies at the molecular level to drive commercial viability.
+                    </p>
+</div>
+<!-- Card 4: Holistic Expertise -->
+<div class="flex flex-col bg-surface-container-lowest border border-[#E2E8F0] rounded-xl p-8 hover:shadow-lg transition-shadow duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary text-2xl">hub</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-3">Holistic Expertise</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        From early-stage process characterization to commercial launch, our integrated approach ensures continuity and knowledge retention across phases.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Case Studies / Success Stories Section -->
+<section class="w-full bg-surface-container-low py-24 border-t border-surface-variant">
+<div class="max-w-[1280px] mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="font-display text-3xl font-bold text-on-surface tracking-tight mb-2">Proven Methodologies</h2>
+<p class="font-body text-on-surface-variant text-lg">Applied strategic growth and clinical precision in action.</p>
+</div>
+<button class="bg-transparent border border-primary text-primary font-label text-sm font-medium py-2 px-6 rounded-lg hover:bg-primary hover:text-on-primary transition-colors duration-200">
+                        View All Case Studies
+                    </button>
+</div>
+<!-- Case Study Glassmorphism Card -->
+<div class="relative w-full rounded-xl overflow-hidden border border-[#E2E8F0] bg-surface-container-lowest shadow-[0_4px_24px_rgba(10,14,23,0.04)]">
+<div class="flex flex-col lg:flex-row">
+<!-- Image Area -->
+<div class="w-full lg:w-5/12 h-64 lg:h-auto relative bg-surface-variant">
+<img alt="High-tech sterile pharmaceutical manufacturing environment with precision equipment" class="absolute inset-0 w-full h-full object-cover" data-alt="Clean, modern pharmaceutical manufacturing facility, stainless steel equipment, bright clinical lighting, sterile environment, blue tint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQuSthM5FP3sXuIzuqiLTuZRRIIDC5VgPFi-TJpTXV1FGba21bg-e_IvDSNgCKgRNy5uFqWvBXRQ5FsQE2H4-pvUwCaxo1NNTSeVOzWwN8E6QRWBzGyYTi_qLjxo2ba4AkfW83AvBYur3xtfSVLMFepfXWHFhvWMSN7n0pE6knm0SNBEzCa5F0-0Qzjd0K3ZB6mj084vXjtj8Z5w4AO-5Hdd3euuXzXPWZCykTB_ff_ikK4Ld3gxc1hbNSaJXzXALjbG1jYg58R9E"/>
+<!-- Overlay Gradient -->
+<div class="absolute inset-0 bg-gradient-to-r from-transparent to-surface-container-lowest hidden lg:block w-16 right-0"></div>
+</div>
+<!-- Content Area -->
+<div class="w-full lg:w-7/12 p-8 lg:p-12 flex flex-col justify-center">
+<!-- Midnight Blue Header Strip (implied through tag) -->
+<div class="inline-flex items-center gap-2 bg-[#0A0E17] text-white px-3 py-1 rounded-DEFAULT text-xs font-label font-medium tracking-wide mb-6 self-start">
+<span class="material-symbols-outlined text-[14px]">science</span>
+                                Scale-up &amp; Manufacturing
+                            </div>
+<h3 class="font-display text-2xl font-bold text-on-surface mb-4">Successful Scale-up of Sterile Injectables</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                                For a top-tier biopharma client, Alvertech orchestrated the transition from clinical Phase III to commercial manufacturing for a complex sterile injectable. Through rigorous process characterization and advanced risk modeling, we identified critical process parameters that mitigated a projected 15% batch failure rate.
+                            </p>
+<!-- Metric Tiles within Case Study -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6 border-t border-surface-variant">
+<div>
+<div class="font-display text-3xl font-extrabold text-primary mb-1">15%</div>
+<div class="font-label text-xs text-on-surface-variant uppercase tracking-wide">Yield Improvement</div>
+</div>
+<div>
+<div class="font-display text-3xl font-extrabold text-secondary mb-1">Zero</div>
+<div class="font-label text-xs text-on-surface-variant uppercase tracking-wide">FDA Form 483s</div>
+</div>
+<div class="hidden md:block">
+<div class="font-display text-3xl font-extrabold text-primary mb-1">6 Mo</div>
+<div class="font-label text-xs text-on-surface-variant uppercase tracking-wide">Accelerated Timeline</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+<div class="max-w-[1280px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-start gap-8">
+<div class="flex flex-col gap-4">
+<span class="text-lg font-bold text-slate-800 dark:text-slate-100 tracking-tighter">Alvertech Solutions</span>
+<p class="font-sans text-xs text-slate-500 dark:text-slate-400 max-w-sm">
+                    © 2024 Alvertech Solutions. Scientific Precision. Strategic Growth.
+                </p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 font-sans text-xs">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-all cursor-pointer" href="#">Services</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-all cursor-pointer" href="#">Leadership</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-all cursor-pointer" href="#">Contact</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-all cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-all cursor-pointer" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
