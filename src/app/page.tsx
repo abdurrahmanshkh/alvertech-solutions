@@ -125,7 +125,7 @@ export default function Home() {
                   Explore Services <ArrowRight size={18} />
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/about"
                   className="border border-white/20 text-white font-semibold px-8 py-4 rounded text-center transition-all duration-200 hover:bg-white/10 hover:border-white/40"
                 >
                   Meet the Team
