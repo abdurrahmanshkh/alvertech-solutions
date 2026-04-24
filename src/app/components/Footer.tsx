@@ -73,11 +73,13 @@ export default function Footer() {
               <div className="flex gap-3 text-sm text-white/60">
                 <MapPin size={18} className="shrink-0 mt-0.5 text-tech-blue" />
                 <span>
-                  Greenfield Residency, Flat No. 203,
+                  Greenfield Residency
                   <br />
-                  Plot No. 03, Sector 35-I,
+                  Plot No. 03, Sector 35-I
                   <br />
-                  Kharghar, Navi Mumbai – 410210
+                  Kharghar, Navi Mumbai
+                  <br />
+                  Maharashtra 410210
                 </span>
               </div>
               <div className="flex gap-3 text-sm text-white/60">
@@ -86,16 +88,16 @@ export default function Footer() {
                   href="tel:+919820338978"
                   className="hover:text-white transition-colors"
                 >
-                  +91 98203 38978
+                  +91 98333 92190
                 </a>
               </div>
               <div className="flex gap-3 text-sm text-white/60">
                 <Mail size={18} className="shrink-0 text-tech-blue" />
                 <a
-                  href="mailto:patelmanojc@gmail.com"
+                  href="mailto:alvertechsolutions@gmail.com"
                   className="hover:text-white transition-colors"
                 >
-                  patelmanojc@gmail.com
+                  alvertechsolutions@gmail.com
                 </a>
               </div>
             </div>

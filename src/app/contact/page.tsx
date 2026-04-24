@@ -136,13 +136,13 @@ export default function ContactPage() {
                       <p className="font-medium text-charcoal">
                         Alvertech Solutions
                       </p>
-                      <p>Greenfield Residency, Flat No. 203,</p>
-                      <p>Plot No. 03, Sector 35-I,</p>
-                      <p>Kharghar, Navi Mumbai – 410210</p>
-                      <p>Maharashtra, India</p>
+                      <p>Greenfield Residency</p>
+                      <p>Plot No. 03, Sector 35-I</p>
+                      <p>Kharghar, Navi Mumbai</p>
+                      <p>Maharashtra 410210</p>
                     </div>
                   </div>
-                  
+
                   {/* Map Image */}
                   <div className="relative w-full h-48 rounded overflow-hidden border border-border-light shadow-sm">
                     <Image
@@ -155,54 +155,54 @@ export default function ContactPage() {
                 </div>
 
                 {/* Scientific Leadership */}
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded bg-growth-green/10 flex items-center justify-center">
-                    <User size={20} className="text-growth-green" />
-                  </div>
-                  <h2 className="text-xl font-bold">Scientific Leadership</h2>
-                </div>
-                <div className="space-y-5">
-                  {contacts.map((c) => (
-                    <div
-                      key={c.name}
-                      className="p-4 rounded bg-slate-bg border border-border-light"
-                    >
-                      <h3 className="font-semibold text-charcoal">
-                        {c.name}
-                      </h3>
-                      <p className="text-xs text-tech-blue font-medium mt-0.5">
-                        {c.role}
-                      </p>
-                      <div className="mt-3 space-y-2">
-                        <a
-                          href={c.phoneHref}
-                          className="flex items-center gap-2 text-sm text-soft-gray hover:text-charcoal transition-colors"
-                        >
-                          <Phone size={14} className="text-tech-blue" />
-                          {c.phone}
-                        </a>
-                        <a
-                          href={`mailto:${c.email}`}
-                          className="flex items-center gap-2 text-sm text-soft-gray hover:text-charcoal transition-colors"
-                        >
-                          <Mail size={14} className="text-tech-blue" />
-                          {c.email}
-                        </a>
-                        <a
-                          href={c.linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-sm text-soft-gray hover:text-tech-blue transition-colors"
-                        >
-                          <LinkedInIcon size={14} />
-                          LinkedIn Profile
-                        </a>
-                      </div>
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded bg-growth-green/10 flex items-center justify-center">
+                      <User size={20} className="text-growth-green" />
                     </div>
-                  ))}
+                    <h2 className="text-xl font-bold">Scientific Leadership</h2>
+                  </div>
+                  <div className="space-y-5">
+                    {contacts.map((c) => (
+                      <div
+                        key={c.name}
+                        className="p-4 rounded bg-slate-bg border border-border-light"
+                      >
+                        <h3 className="font-semibold text-charcoal">
+                          {c.name}
+                        </h3>
+                        <p className="text-xs text-tech-blue font-medium mt-0.5">
+                          {c.role}
+                        </p>
+                        <div className="mt-3 space-y-2">
+                          <a
+                            href={c.phoneHref}
+                            className="flex items-center gap-2 text-sm text-soft-gray hover:text-charcoal transition-colors"
+                          >
+                            <Phone size={14} className="text-tech-blue" />
+                            {c.phone}
+                          </a>
+                          <a
+                            href={`mailto:${c.email}`}
+                            className="flex items-center gap-2 text-sm text-soft-gray hover:text-charcoal transition-colors"
+                          >
+                            <Mail size={14} className="text-tech-blue" />
+                            {c.email}
+                          </a>
+                          <a
+                            href={c.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-sm text-soft-gray hover:text-tech-blue transition-colors"
+                          >
+                            <LinkedInIcon size={14} />
+                            LinkedIn Profile
+                          </a>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
               </motion.div>
             </div>
 
