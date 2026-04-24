@@ -11,6 +11,7 @@
   --color-charcoal: #1A2530;
   --color-soft-gray: #4A5568;
   --color-crisp-white: #FFFFFF;
+  --color-white: #FFFFFF;
   --color-slate-bg: #F4F7F9;
   --color-border-light: #E2E8F0;
   --color-surface-elevated: #F9FAFB;
@@ -18,26 +19,28 @@
 
 /* ── Base Styles ── */
 
-* {
-  box-sizing: border-box;
-}
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  font-family: var(--font-inter);
-  color: var(--color-soft-gray);
-  background: var(--color-crisp-white);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  body {
+    font-family: var(--font-inter);
+    color: var(--color-soft-gray);
+    background: var(--color-crisp-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-charcoal);
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-charcoal);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
 }
 
 /* ── Utility Classes ── */
