@@ -41,15 +41,24 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0">
+          <Link href="/" className="flex items-center gap-3 shrink-0 group">
             <Image
               src="/logo.png"
               alt="Alvertech Solutions"
-              width={160}
-              height={44}
-              className="h-9 w-auto lg:h-11"
+              width={48}
+              height={48}
+              className="h-10 w-auto lg:h-12 transition-transform duration-300 group-hover:scale-110"
               priority
             />
+            <div className="flex flex-col leading-none">
+              <div className="flex items-baseline">
+                <span className="text-xl lg:text-2xl font-light text-soft-gray tracking-tight">ALVER</span>
+                <span className="text-xl lg:text-2xl font-black text-tech-blue tracking-tight">TECH</span>
+              </div>
+              <span className="text-[10px] lg:text-[11px] font-bold text-soft-gray/60 tracking-[0.3em] -mt-0.5 uppercase">
+                Solutions
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

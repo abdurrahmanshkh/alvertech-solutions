@@ -17,13 +17,24 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Image
-              src="/logo.png"
-              alt="Alvertech Solutions"
-              width={180}
-              height={50}
-              className="h-10 w-auto brightness-0 invert mb-4"
-            />
+            <Link href="/" className="flex items-center gap-3 mb-6 group">
+              <Image
+                src="/logo.png"
+                alt="Alvertech Solutions"
+                width={40}
+                height={40}
+                className="h-10 w-auto brightness-0 invert opacity-90 transition-opacity group-hover:opacity-100"
+              />
+              <div className="flex flex-col leading-none">
+                <div className="flex items-baseline">
+                  <span className="text-xl font-light text-white/70 tracking-tight">ALVER</span>
+                  <span className="text-xl font-black text-tech-blue tracking-tight">TECH</span>
+                </div>
+                <span className="text-[10px] font-bold text-white/40 tracking-[0.3em] -mt-0.5 uppercase">
+                  Solutions
+                </span>
+              </div>
+            </Link>
             <p className="text-sm leading-relaxed text-white/60 max-w-md">
               Transforming Pharmaceutical Visions into Operational Realities.
               Engineering excellence in clinical and commercial manufacturing
