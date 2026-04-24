@@ -1,30 +1,137 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #4a5568;
-  /* Soft Gray for body text */
-  --tech-blue: #007bff;
-  --growth-green: #2bd86b;
-  --midnight-blue: #0a0e17;
-  /* For Hero/Footer backgrounds */
-  --charcoal: #1a2530;
-  /* For Headings */
-  --slate-gray: #f4f7f9;
-  /* For section alternation */
+@theme inline {
+  --font-inter: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-tech-blue: #007BFF;
+  --color-tech-blue-dark: #0060CC;
+  --color-growth-green: #2BD86B;
+  --color-growth-green-dark: #1FB855;
+  --color-midnight-blue: #0A0E17;
+  --color-charcoal: #1A2530;
+  --color-soft-gray: #4A5568;
+  --color-crisp-white: #FFFFFF;
+  --color-slate-bg: #F4F7F9;
+  --color-border-light: #E2E8F0;
+  --color-surface-elevated: #F9FAFB;
+}
+
+/* ── Base Styles ── */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
+  color: var(--color-soft-gray);
+  background: var(--color-crisp-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--charcoal);
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-charcoal);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* ── Utility Classes ── */
+
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, var(--color-midnight-blue) 0%, #111827 50%, #0f172a 100%);
+}
+
+.gradient-btn {
+  background: linear-gradient(135deg, var(--color-tech-blue) 0%, var(--color-tech-blue-dark) 100%);
+}
+
+.gradient-btn:hover {
+  background: linear-gradient(135deg, var(--color-tech-blue-dark) 0%, #004FB3 100%);
+}
+
+.gradient-green-btn {
+  background: linear-gradient(135deg, var(--color-growth-green) 0%, var(--color-growth-green-dark) 100%);
+}
+
+.card-shadow {
+  box-shadow: 0 8px 32px rgba(10, 14, 23, 0.06);
+}
+
+.card-shadow-hover {
+  box-shadow: 0 12px 40px rgba(10, 14, 23, 0.1);
+}
+
+/* ── Animations ── */
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.animate-delay-100 { animation-delay: 0.1s; }
+.animate-delay-200 { animation-delay: 0.2s; }
+.animate-delay-300 { animation-delay: 0.3s; }
+.animate-delay-400 { animation-delay: 0.4s; }
+.animate-delay-500 { animation-delay: 0.5s; }
+
+/* ── Scrollbar ── */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-slate-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A0AEC0;
 }
