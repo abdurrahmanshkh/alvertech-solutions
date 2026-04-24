@@ -93,14 +93,14 @@ export default function AdvantagePage() {
           <div className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full bg-tech-blue blur-3xl" />
           <div className="absolute bottom-1/4 right-1/3 w-72 h-72 rounded-full bg-growth-green blur-3xl" />
         </div>
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 md:pt-32 pb-48">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="text-center max-w-3xl mx-auto">
             <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4">
               Why Choose Us
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Precision Engineered for{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-tech-blue to-growth-green">
+              <span className="text-tech-blue">
                 Pharmaceutical Excellence
               </span>
             </h1>
@@ -112,7 +112,6 @@ export default function AdvantagePage() {
             </p>
           </div>
         </div>
-        <div className="hero-fade-bottom" />
       </section>
 
       {/* ── Advantage Cards ── */}

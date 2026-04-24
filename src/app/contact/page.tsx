@@ -86,14 +86,14 @@ export default function ContactPage() {
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/3 left-1/4 w-80 h-80 rounded-full bg-tech-blue blur-3xl" />
         </div>
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 md:pt-28 pb-48">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-28">
           <div className="text-center max-w-3xl mx-auto">
             <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4">
               Get in Touch
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Partner with{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-tech-blue to-growth-green">
+              <span className="text-tech-blue">
                 Industry Experts
               </span>
             </h1>
@@ -104,7 +104,6 @@ export default function ContactPage() {
             </p>
           </div>
         </div>
-        <div className="hero-fade-bottom" />
       </section>
 
       {/* ── Contact Content ── */}

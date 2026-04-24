@@ -96,14 +96,14 @@ export default function Home() {
           <div className="absolute bottom-1/4 left-1/4 w-72 h-72 rounded-full bg-growth-green blur-3xl" />
         </div>
 
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 md:pt-32 lg:pt-40 pb-48">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
           <div className="max-w-3xl">
             <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up">
               Pharmaceutical Consultancy
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight animate-fade-in-up animate-delay-100">
               Transforming Pharmaceutical Visions into{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-tech-blue to-growth-green">
+              <span className="text-tech-blue">
                 Operational Realities
               </span>
             </h1>
@@ -128,8 +128,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className="hero-fade-bottom" />
       </section>
 
       {/* ── Stats Section ── */}
@@ -284,7 +282,7 @@ export default function Home() {
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-tech-blue blur-3xl" />
         </div>
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             Ready to Build Your Next Facility?
           </h2>
