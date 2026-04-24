@@ -125,7 +125,7 @@ export default function ServicesPage() {
           <div className="absolute top-1/3 right-1/4 w-80 h-80 rounded-full bg-tech-blue blur-3xl" />
           <div className="absolute bottom-1/3 left-1/3 w-64 h-64 rounded-full bg-growth-green blur-3xl" />
         </div>
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 md:pt-32 pb-48">
           <div className="text-center max-w-3xl mx-auto">
             <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4">
               Our Services
@@ -159,7 +159,7 @@ export default function ServicesPage() {
             })}
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-white via-white/50 to-transparent pointer-events-none" />
+        <div className="hero-fade-bottom" />
       </section>
 
       {/* ── Service Sections ── */}
@@ -228,11 +228,11 @@ export default function ServicesPage() {
       })}
 
       {/* ── CTA ── */}
-      <section className="gradient-hero relative overflow-hidden">
+      <section className="gradient-hero relative overflow-hidden section-padding">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-growth-green blur-3xl" />
         </div>
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             Need a Tailored Solution?
           </h2>

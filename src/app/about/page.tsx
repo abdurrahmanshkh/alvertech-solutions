@@ -121,7 +121,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/4 right-1/3 w-96 h-96 rounded-full bg-tech-blue blur-3xl" />
         </div>
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 md:pt-32 pb-48">
           <div className="text-center max-w-3xl mx-auto">
             <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4">
               About Alvertech Solutions
@@ -139,7 +139,7 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-white via-white/50 to-transparent pointer-events-none" />
+        <div className="hero-fade-bottom" />
       </section>
 
       {/* ── Mission Statement ── */}

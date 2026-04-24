@@ -65,7 +65,23 @@
 }
 
 .gradient-hero {
-  background: linear-gradient(135deg, var(--color-midnight-blue) 0%, #111827 50%, #0f172a 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-midnight-blue) 0%,
+    #111827 50%,
+    #0f172a 100%
+  );
+}
+
+.hero-fade-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 12rem; /* h-48 */
+  background: linear-gradient(to top, white, transparent);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .gradient-btn {

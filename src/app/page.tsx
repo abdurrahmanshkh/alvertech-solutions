@@ -90,13 +90,13 @@ export default function Home() {
     <>
       {/* ── Hero Section ── */}
       <section className="gradient-hero relative overflow-hidden">
-        {/* Decorative elements */}
+        {/* Background blobs */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full bg-tech-blue blur-3xl" />
           <div className="absolute bottom-1/4 left-1/4 w-72 h-72 rounded-full bg-growth-green blur-3xl" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 md:pt-32 lg:pt-40 pb-48">
           <div className="max-w-3xl">
             <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up">
               Pharmaceutical Consultancy
@@ -117,8 +117,7 @@ export default function Home() {
                 href="/services"
                 className="gradient-btn text-white font-semibold px-8 py-4 rounded text-center transition-all duration-200 hover:shadow-xl hover:shadow-tech-blue/20 inline-flex items-center justify-center gap-2"
               >
-                Explore Services
-                <ArrowRight size={18} />
+                Explore Services <ArrowRight size={18} />
               </Link>
               <Link
                 href="/contact"
@@ -130,8 +129,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Bottom gradient fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-white via-white/50 to-transparent pointer-events-none" />
+        <div className="hero-fade-bottom" />
       </section>
 
       {/* ── Stats Section ── */}
