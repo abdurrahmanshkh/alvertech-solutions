@@ -4,7 +4,7 @@ import ClientPage from "./client";
 export const metadata: Metadata = {
   title: "Services",
   description: "Comprehensive pharmaceutical consulting services including HVAC layout, cleanroom design, USFDA/EMA compliance, tech transfer, and formulation development.",
-  keywords: ["HVAC layout", "cleanroom design", "USFDA compliance", "EMA compliance", "technology transfer", "formulation development", "sterile manufacturing setup"],
+  keywords: ["HVAC layout", "cleanroom design", "USFDA compliance", "EMA compliance", "technology transfer", "formulation development", "sterile manufacturing setup", "CMO scouting", "registration batches", "pharmaceutical in-licensing"],
   openGraph: {
     title: "Services | Alvertech Solutions",
     description: "Expert pharmaceutical consulting: HVAC, Cleanroom Design, and USFDA Compliance.",
