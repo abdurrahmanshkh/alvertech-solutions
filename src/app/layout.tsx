@@ -11,12 +11,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.alvertechsolutions.com'),
   title: {
-    default: "Alvertech Solutions | Pharmaceutical Consultancy",
+    default: "Alvertech Solutions | Pharmaceutical Consultancy & Facility Design",
     template: "%s | Alvertech Solutions",
   },
   description:
-    "Transforming Pharmaceutical Visions into Operational Realities. End-to-end pharmaceutical consultancy for facility design, manufacturing operations, and product development.",
+    "Transforming Pharmaceutical Visions into Operational Realities. End-to-end B2B pharmaceutical consultancy specializing in sterile manufacturing, FDA compliance, facility design, and lean manufacturing operations.",
   keywords: [
     "pharmaceutical consultancy",
     "facility design",
@@ -27,6 +28,27 @@ export const metadata: Metadata = {
     "drug formulation",
     "technology transfer",
   ],
+  openGraph: {
+    type: "website",
+    siteName: "Alvertech Solutions",
+    title: "Alvertech Solutions | Pharmaceutical Consultancy & Facility Design",
+    description: "End-to-end B2B pharmaceutical consultancy specializing in sterile manufacturing, FDA compliance, facility design, and lean manufacturing operations.",
+    url: "https://www.alvertechsolutions.com",
+    images: [
+      {
+        url: "/banner.png",
+        width: 1200,
+        height: 630,
+        alt: "Alvertech Solutions Banner",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alvertech Solutions | Pharmaceutical Consultancy & Facility Design",
+    description: "End-to-end B2B pharmaceutical consultancy specializing in sterile manufacturing, FDA compliance, facility design, and lean manufacturing operations.",
+    images: ["/banner.png"],
+  },
 };
 
 export default function RootLayout({
