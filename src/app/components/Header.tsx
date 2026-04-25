@@ -32,11 +32,10 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-border-light"
-          : "bg-white border-b border-transparent"
-      }`}
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled
+        ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-border-light"
+        : "bg-white border-b border-transparent"
+        }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
@@ -69,11 +68,10 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative px-4 py-2 text-sm font-medium rounded transition-colors duration-200 ${
-                    isActive
-                      ? "text-tech-blue"
-                      : "text-soft-gray hover:text-charcoal"
-                  }`}
+                  className={`relative px-4 py-2 text-sm font-medium rounded transition-colors duration-200 ${isActive
+                    ? "text-tech-blue"
+                    : "text-soft-gray hover:text-charcoal"
+                    }`}
                 >
                   {link.label}
                   {isActive && (
@@ -103,22 +101,20 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
-        <nav className="px-4 pb-6 space-y-1 bg-white border-t border-border-light">
+        <nav className="px-4 py-6 space-y-1 bg-white border-t border-border-light">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`block px-4 py-3 rounded-md text-base font-medium transition-colors ${
-                  isActive
-                    ? "text-tech-blue bg-blue-50"
-                    : "text-soft-gray hover:text-charcoal hover:bg-slate-bg"
-                }`}
+                className={`block px-4 py-3 rounded-md text-base font-medium transition-colors ${isActive
+                  ? "text-tech-blue bg-blue-50"
+                  : "text-soft-gray hover:text-charcoal hover:bg-slate-bg"
+                  }`}
               >
                 {link.label}
               </Link>
