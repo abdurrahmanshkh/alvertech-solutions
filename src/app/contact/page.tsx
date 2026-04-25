@@ -15,6 +15,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 634,
         alt: "Contact Alvertech Solutions",
+        type: "image/png",
       },
     ],
   },
