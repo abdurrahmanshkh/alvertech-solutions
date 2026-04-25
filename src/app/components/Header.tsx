@@ -47,6 +47,7 @@ export default function Header() {
               width={48}
               height={48}
               className="h-10 w-auto lg:h-12 transition-transform duration-300 group-hover:scale-110"
+              style={{ width: "auto", height: "auto" }}
               priority
             />
             <div className="flex flex-col leading-none">

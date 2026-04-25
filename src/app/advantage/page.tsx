@@ -93,6 +93,7 @@ export default function AdvantagePage() {
             src="/images/advantage-hero.webp" 
             alt="High-tech sterile pharmaceutical manufacturing environment" 
             fill 
+            sizes="100vw"
             className="object-cover opacity-40 mix-blend-luminosity" 
             priority 
           />

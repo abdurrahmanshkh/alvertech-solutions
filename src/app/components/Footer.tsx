@@ -24,6 +24,7 @@ export default function Footer() {
                 width={40}
                 height={40}
                 className="h-10 w-auto brightness-0 invert opacity-90 transition-opacity group-hover:opacity-100"
+                style={{ width: "auto", height: "auto" }}
               />
               <div className="flex flex-col leading-none">
                 <div className="flex items-baseline">

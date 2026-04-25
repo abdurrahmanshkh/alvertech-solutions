@@ -121,6 +121,7 @@ export default function AboutPage() {
             src="/images/about-lab.webp" 
             alt="Modern pharmaceutical laboratory" 
             fill 
+            sizes="100vw"
             className="object-cover opacity-40 mix-blend-luminosity" 
             priority 
           />
