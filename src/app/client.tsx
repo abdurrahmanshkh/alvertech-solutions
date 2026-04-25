@@ -83,7 +83,7 @@ const founders = [
 ];
 
 const stats = [
-  { value: "94+", label: "Combined Years of Expertise" },
+  { value: "30+", label: "Years of Industry Expertise" },
   { value: "9", label: "U.S. FDA Projects Delivered" },
   { value: "3", label: "Pillars of Excellence" },
 ];

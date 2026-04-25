@@ -84,6 +84,16 @@ const services = [
           "Production planning and inventory control",
         ],
       },
+      {
+        heading: "CMO Scouting & Registration",
+        subtitle: "Strategic sourcing for regulated market manufacturing.",
+        items: [
+          "CMO scouting for registration batches",
+          "Injectable, Nasal, DPI, and MDI support",
+          "Manufacturing for regulated markets (US/EU)",
+          "Audit support and compliance vetting",
+        ],
+      },
     ],
   },
   {
@@ -109,6 +119,16 @@ const services = [
           "Technology transfer from R&D to manufacturing",
           "Process development and optimization",
           "Documentation support",
+        ],
+      },
+      {
+        heading: "In-Licensing & Dossier Support",
+        subtitle: "Accelerated market entry through ready-made dossiers.",
+        items: [
+          "In-licensed route for US, EU, and ROW markets",
+          "Ready-made dossier acquisition",
+          "Sourcing from reputed pharma companies",
+          "Domestic and international licensing support",
         ],
       },
     ],
