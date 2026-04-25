@@ -176,14 +176,17 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  {/* Map Image */}
-                  <div className="relative w-full h-48 rounded overflow-hidden border border-border-light shadow-sm">
-                    <Image
-                      src="/images/contact-map.webp"
-                      alt="Map showing Alvertech Solutions location in Navi Mumbai"
-                      fill
-                      className="object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-500"
-                    />
+                  {/* Google Maps Iframe */}
+                  <div className="relative w-full h-64 md:h-72 rounded-lg overflow-hidden border border-border-light shadow-sm">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d468.80794426714925!2d73.07249811201692!3d19.072730939872702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1eee4115f2f%3A0x23e15b6520dc3582!2sGreenfield%20Residency%2C%20Sector%2035-I%2C%20Kutak%20Bandhan%2C%20Kharghar%2C%20Panvel%2C%20Maharashtra%20410210!5e0!3m2!1sen!2sin!4v1777099843479!5m2!1sen!2sin"
+                      className="absolute inset-0 w-full h-full filter grayscale-[30%] hover:grayscale-0 transition-all duration-500"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Alvertech Solutions Office Location"
+                    ></iframe>
                   </div>
                 </div>
 
