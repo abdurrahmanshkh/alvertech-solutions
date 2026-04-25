@@ -5,6 +5,25 @@ export const metadata: Metadata = {
   title: "About Us & Leadership",
   description: "With nearly a century of combined experience, founders Manoj Patel, Gurudev Suryavanshi, and Inamdar Bhaisaheb lead Alvertech Solutions in delivering world-class pharmaceutical engineering and consulting.",
   keywords: ["Manoj Patel", "Gurudev Suryavanshi", "Inamdar Bhaisaheb", "pharmaceutical experts", "pharmaceutical engineering"],
+  openGraph: {
+    title: "About Us & Leadership | Alvertech Solutions",
+    description: "With nearly a century of combined experience, our leadership delivers world-class pharmaceutical engineering.",
+    url: "https://www.alvertechsolutions.com/about",
+    images: [
+      {
+        url: "/banner.png",
+        width: 1200,
+        height: 634,
+        alt: "Alvertech Solutions Leadership Team",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us & Leadership | Alvertech Solutions",
+    description: "Expert leadership in pharmaceutical engineering and consultancy.",
+    images: ["/banner.png"],
+  },
 };
 
 export default function Page() {

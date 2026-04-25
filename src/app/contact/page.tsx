@@ -5,6 +5,25 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description: "Contact Alvertech Solutions in Kharghar, Navi Mumbai for world-class pharmaceutical consulting, facility design, and operational excellence.",
   keywords: ["contact Alvertech Solutions", "pharmaceutical consulting Mumbai", "Kharghar Navi Mumbai"],
+  openGraph: {
+    title: "Contact Us | Alvertech Solutions",
+    description: "Get in touch with Alvertech Solutions in Kharghar, Navi Mumbai.",
+    url: "https://www.alvertechsolutions.com/contact",
+    images: [
+      {
+        url: "/banner.png",
+        width: 1200,
+        height: 634,
+        alt: "Contact Alvertech Solutions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Alvertech Solutions",
+    description: "Connect with our experts for pharmaceutical facility design and consulting.",
+    images: ["/banner.png"],
+  },
 };
 
 export default function Page() {

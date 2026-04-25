@@ -28,26 +28,46 @@ export const metadata: Metadata = {
     "drug formulation",
     "technology transfer",
   ],
+  authors: [{ name: "Alvertech Solutions" }],
+  creator: "Alvertech Solutions",
+  publisher: "Alvertech Solutions",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
     type: "website",
+    locale: "en_US",
+    url: "https://www.alvertechsolutions.com",
     siteName: "Alvertech Solutions",
     title: "Alvertech Solutions | Pharmaceutical Consultancy & Facility Design",
-    description: "End-to-end B2B pharmaceutical consultancy specializing in sterile manufacturing, FDA compliance, facility design, and lean manufacturing operations.",
-    url: "https://www.alvertechsolutions.com",
+    description: "Transforming Pharmaceutical Visions into Operational Realities. Expert B2B pharmaceutical consultancy.",
     images: [
       {
         url: "/banner.png",
         width: 1200,
-        height: 630,
-        alt: "Alvertech Solutions Banner",
+        height: 634,
+        alt: "Alvertech Solutions - Engineering Excellence",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Alvertech Solutions | Pharmaceutical Consultancy & Facility Design",
-    description: "End-to-end B2B pharmaceutical consultancy specializing in sterile manufacturing, FDA compliance, facility design, and lean manufacturing operations.",
+    description: "Transforming Pharmaceutical Visions into Operational Realities. Expert B2B pharmaceutical consultancy.",
     images: ["/banner.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 

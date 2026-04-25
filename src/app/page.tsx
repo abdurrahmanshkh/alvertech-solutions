@@ -4,6 +4,25 @@ import ClientPage from "./client";
 export const metadata: Metadata = {
   title: "Home",
   description: "Alvertech Solutions is a premier B2B pharmaceutical consultancy specializing in Greenfield and Brownfield projects, sterile injectables, and comprehensive facility design.",
+  openGraph: {
+    title: "Home | Alvertech Solutions",
+    description: "Alvertech Solutions is a premier B2B pharmaceutical consultancy specializing in Greenfield and Brownfield projects, sterile injectables, and comprehensive facility design.",
+    url: "https://www.alvertechsolutions.com",
+    images: [
+      {
+        url: "/banner.png",
+        width: 1200,
+        height: 634,
+        alt: "Alvertech Solutions Home",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Home | Alvertech Solutions",
+    description: "Alvertech Solutions is a premier B2B pharmaceutical consultancy specializing in Greenfield and Brownfield projects, sterile injectables, and comprehensive facility design.",
+    images: ["/banner.png"],
+  },
 };
 
 export default function Page() {
