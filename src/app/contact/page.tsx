@@ -66,11 +66,42 @@ export default function ContactPage() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would POST to an API endpoint
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to submit request.");
+      }
+
+      setSubmitted(true);
+      setFormData({
+        name: "",
+        company: "",
+        email: "",
+        service: "",
+        message: "",
+      });
+    } catch (err: any) {
+      setError(err.message || "An unexpected error occurred. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (
@@ -237,6 +268,11 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-5">
+                    {error && (
+                      <div className="bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-md text-sm">
+                        {error}
+                      </div>
+                    )}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
                         <label
@@ -342,10 +378,20 @@ export default function ContactPage() {
 
                     <button
                       type="submit"
-                      className="w-full gradient-btn text-white font-semibold px-8 py-4 rounded transition-all duration-200 hover:shadow-xl hover:shadow-tech-blue/20 inline-flex items-center justify-center gap-2"
+                      disabled={loading}
+                      className={`w-full gradient-btn text-white font-semibold px-8 py-4 rounded transition-all duration-200 hover:shadow-xl hover:shadow-tech-blue/20 inline-flex items-center justify-center gap-2 ${loading ? "opacity-70 cursor-not-allowed" : ""}`}
                     >
-                      <Send size={18} />
-                      Submit Consultation Request
+                      {loading ? (
+                        <>
+                          <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                          Sending Request...
+                        </>
+                      ) : (
+                        <>
+                          <Send size={18} />
+                          Submit Consultation Request
+                        </>
+                      )}
                     </button>
 
                     <p className="text-xs text-soft-gray/70 text-center">
