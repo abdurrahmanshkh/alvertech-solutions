@@ -2,7 +2,7 @@ import { type NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
   try {
-    const { name, company, email, service, message } = await request.json();
+    const { name, company, email, phone, service, message } = await request.json();
 
     // Validate required fields
     if (!name || !email || !message || !company || !service) {
@@ -132,37 +132,52 @@ export async function POST(request: NextRequest) {
           <div class="container">
             <div class="header">
               <div class="logo">
-                <span class="logo-alvertech">Alvertech</span><span class="logo-solutions">Solutions</span>
+                <span class="logo-alvertech">Alvertech</span><span class="logo-solutions"> Solutions</span>
               </div>
               <h1>New Consultation Request</h1>
             </div>
             
             <div class="content">
-              <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                <div class="field" style="flex: 1; min-width: 250px;">
-                  <div class="field-label">👤 Full Name</div>
-                  <div class="field-value">${name}</div>
-                </div>
-                
-                <div class="field" style="flex: 1; min-width: 250px;">
-                  <div class="field-label">🏢 Company</div>
-                  <div class="field-value">${company}</div>
-                </div>
-              </div>
-              
-              <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                <div class="field" style="flex: 1; min-width: 250px;">
-                  <div class="field-label">📧 Email Address</div>
-                  <div class="field-value">
-                    <a href="mailto:${email}" style="color: #0059bb; text-decoration: none; font-weight: 500;">${email}</a>
-                  </div>
-                </div>
-                
-                <div class="field" style="flex: 1; min-width: 250px;">
-                  <div class="field-label">⚙️ Service Required</div>
-                  <div class="field-value" style="border-left-color: #006d30;">${service}</div>
-                </div>
-              </div>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout: fixed;">
+                <tr>
+                  <td width="50%" valign="top" style="padding-right: 10px;">
+                    <div class="field">
+                      <div class="field-label">👤 Full Name</div>
+                      <div class="field-value">${name}</div>
+                    </div>
+                  </td>
+                  <td width="50%" valign="top" style="padding-left: 10px;">
+                    <div class="field">
+                      <div class="field-label">🏢 Company</div>
+                      <div class="field-value">${company}</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%" valign="top" style="padding-right: 10px;">
+                    <div class="field">
+                      <div class="field-label">📧 Email Address</div>
+                      <div class="field-value" style="overflow-wrap: break-word; word-break: break-all;">
+                        <a href="mailto:${email}" style="color: #0059bb; text-decoration: none; font-weight: 500;">${email}</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="50%" valign="top" style="padding-left: 10px;">
+                    <div class="field">
+                      <div class="field-label">📞 Phone Number</div>
+                      <div class="field-value">${phone || '<span style="color: #6c757d; font-style: italic;">Not provided</span>'}</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" valign="top">
+                    <div class="field">
+                      <div class="field-label">⚙️ Service Required</div>
+                      <div class="field-value" style="border-left-color: #006d30;">${service}</div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
               
               <div class="field" style="margin-bottom: 0;">
                 <div class="field-label">💬 Message / Requirements</div>
@@ -193,6 +208,7 @@ New Consultation Request - Alvertech Solutions
 Name: ${name}
 Company: ${company}
 Email: ${email}
+Phone: ${phone || "Not provided"}
 Service Required: ${service}
 
 Message / Requirements:

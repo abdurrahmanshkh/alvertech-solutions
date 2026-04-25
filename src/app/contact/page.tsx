@@ -62,6 +62,7 @@ export default function ContactPage() {
     name: "",
     company: "",
     email: "",
+    phone: "",
     service: "",
     message: "",
   });
@@ -94,6 +95,7 @@ export default function ContactPage() {
         name: "",
         company: "",
         email: "",
+        phone: "",
         service: "",
         message: "",
       });
@@ -312,23 +314,42 @@ export default function ContactPage() {
                       </div>
                     </div>
 
-                    <div>
-                      <label
-                        htmlFor="email"
-                        className="block text-sm font-medium text-charcoal mb-1.5"
-                      >
-                        Email Address *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 rounded bg-white border border-border-light text-sm text-charcoal placeholder-soft-gray/60 focus:outline-none focus:border-tech-blue focus:ring-2 focus:ring-tech-blue/20 transition-all"
-                        placeholder="your@email.com"
-                      />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="block text-sm font-medium text-charcoal mb-1.5"
+                        >
+                          Email Address *
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          required
+                          value={formData.email}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 rounded bg-white border border-border-light text-sm text-charcoal placeholder-soft-gray/60 focus:outline-none focus:border-tech-blue focus:ring-2 focus:ring-tech-blue/20 transition-all"
+                          placeholder="your@email.com"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          htmlFor="phone"
+                          className="block text-sm font-medium text-charcoal mb-1.5"
+                        >
+                          Phone Number <span className="text-soft-gray/70 font-normal">(Optional)</span>
+                        </label>
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 rounded bg-white border border-border-light text-sm text-charcoal placeholder-soft-gray/60 focus:outline-none focus:border-tech-blue focus:ring-2 focus:ring-tech-blue/20 transition-all"
+                          placeholder="+1 (234) 567-8900"
+                        />
+                      </div>
                     </div>
 
                     <div>
