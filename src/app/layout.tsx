@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.alvertechsolutions.com'),
+  metadataBase: new URL('https://alvertechsolutions.com'),
   title: {
     default: "Alvertech Solutions | Pharmaceutical Consultancy & Facility Design",
     template: "%s | Alvertech Solutions",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.alvertechsolutions.com",
+    url: "https://alvertechsolutions.com",
     siteName: "Alvertech Solutions",
     title: "Alvertech Solutions | Pharmaceutical Consultancy & Facility Design",
     description: "Transforming Pharmaceutical Visions into Operational Realities. Expert B2B pharmaceutical consultancy.",

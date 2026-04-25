@@ -12,6 +12,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://www.alvertechsolutions.com/sitemap.xml',
+    sitemap: 'https://alvertechsolutions.com/sitemap.xml',
   };
 }

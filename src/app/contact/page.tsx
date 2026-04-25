@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Us | Alvertech Solutions",
     description: "Get in touch with Alvertech Solutions in Kharghar, Navi Mumbai.",
-    url: "https://www.alvertechsolutions.com/contact",
+    url: "https://alvertechsolutions.com/contact",
     images: [
       {
         url: "/banner.png",
@@ -32,8 +32,8 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Alvertech Solutions",
-    image: "https://www.alvertechsolutions.com/logo.png",
-    url: "https://www.alvertechsolutions.com/contact",
+    image: "https://alvertechsolutions.com/logo.png",
+    url: "https://alvertechsolutions.com/contact",
     telephone: "+91-9833392190",
     address: {
       "@type": "PostalAddress",

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Home | Alvertech Solutions",
     description: "Alvertech Solutions is a premier B2B pharmaceutical consultancy specializing in Greenfield and Brownfield projects, sterile injectables, and comprehensive facility design.",
-    url: "https://www.alvertechsolutions.com",
+    url: "https://alvertechsolutions.com",
     images: [
       {
         url: "/banner.png",
@@ -31,8 +31,8 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Alvertech Solutions",
-    url: "https://www.alvertechsolutions.com",
-    logo: "https://www.alvertechsolutions.com/logo.png",
+    url: "https://alvertechsolutions.com",
+    logo: "https://alvertechsolutions.com/logo.png",
     description: "Pharmaceutical Consultancy specializing in Greenfield/Brownfield projects and sterile manufacturing.",
     address: {
       "@type": "PostalAddress",

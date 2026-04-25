@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Services | Alvertech Solutions",
     description: "Expert pharmaceutical consulting: HVAC, Cleanroom Design, and USFDA Compliance.",
-    url: "https://www.alvertechsolutions.com/services",
+    url: "https://alvertechsolutions.com/services",
     images: [
       {
         url: "/banner.png",
