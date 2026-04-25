@@ -193,13 +193,13 @@ export default function ServicesPage() {
           >
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               {/* Section Header */}
-              <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start mb-8 lg:mb-12">
+              <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-12 items-start mb-8 lg:mb-12">
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-100px" }}
+                  viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.5 }}
-                  className="lg:w-1/2"
+                  className="w-full lg:w-1/2"
                 >
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 rounded bg-tech-blue/10 flex items-center justify-center">
@@ -221,9 +221,9 @@ export default function ServicesPage() {
                 <motion.div
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-100px" }}
+                  viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className="lg:w-1/2 h-[300px] relative rounded-xl overflow-hidden border border-border-light shadow-md"
+                  className="w-full lg:w-1/2 h-[200px] lg:h-[300px] relative rounded-xl overflow-hidden border border-border-light shadow-md"
                 >
                   <Image
                     src={
