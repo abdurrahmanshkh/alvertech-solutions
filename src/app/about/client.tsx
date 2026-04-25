@@ -67,7 +67,7 @@ const founders = [
     ],
     highlights: [
       "Senior Manager at USV Private Limited since 2002",
-      "Core team member for S4 HANA SAP project",
+      "Expertise in auditing, outsourcing and costing",
       "Core team member for new plant project at USV Baddi",
     ],
   },
@@ -95,7 +95,7 @@ const founders = [
     ],
     highlights: [
       "35 years at Pravara College of Pharmacy",
-      "B.Pharm alumnus of Pravara College",
+      "B.Pharm alumnus of Govt. College of Pharmacy, Karad",
       "Shaped careers of thousands of pharmacy professionals",
     ],
   },
@@ -144,7 +144,7 @@ export default function AboutPage() {
               </span>
             </h1>
             <p className="mt-6 text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
-              Alvertech Solutions represents a synthesis of rigorous academic
+              Alvertech Solutions represents a synthesis of rigorous R&D
               foundation, operational scale-up expertise, and unparalleled
               regulatory facility design.
             </p>

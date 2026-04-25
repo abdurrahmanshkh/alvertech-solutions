@@ -115,7 +115,7 @@ export default function Home() {
                 <span className="text-tech-blue">Operational Realities</span>
               </h1>
               <p className="mt-6 text-lg md:text-xl text-white/70 leading-relaxed max-w-2xl">
-                Engineering excellence in clinical and commercial manufacturing. We bridge the gap between scientific innovation and FDA-compliant, scalable facility design.
+                Engineering excellence in R&D and commercial manufacturing. We bridge the gap between scientific innovation and FDA-compliant, scalable facility design.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
                 <Link
