@@ -135,9 +135,9 @@ export default function ServicesPage() {
               <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4">
                 Our Services
               </p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 End-to-End Solutions from{" "}
-                <span className="text-tech-blue">
+                <span className="text-tech-blue break-words sm:break-normal">
                   Concept to Commercialization
                 </span>
               </h1>
@@ -193,7 +193,7 @@ export default function ServicesPage() {
           >
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               {/* Section Header */}
-              <div className="flex flex-col lg:flex-row gap-12 items-start mb-12">
+              <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start mb-8 lg:mb-12">
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}

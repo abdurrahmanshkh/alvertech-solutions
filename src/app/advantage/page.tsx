@@ -96,7 +96,7 @@ export default function AdvantagePage() {
             className="object-cover opacity-40 mix-blend-luminosity" 
             priority 
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight-blue/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-midnight-blue/80 to-midnight-blue/95" />
         </div>
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <motion.div
@@ -105,12 +105,12 @@ export default function AdvantagePage() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-center max-w-3xl mx-auto"
           >
-            <p className="text-tech-blue font-semibold text-sm uppercase tracking-widest mb-4">
+            <p className="text-blue-400 font-semibold text-sm uppercase tracking-widest mb-4">
               Why Choose Us
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Precision Engineered for{" "}
-              <span className="text-tech-blue">
+              <span className="text-blue-400">
                 Pharmaceutical Excellence
               </span>
             </h1>

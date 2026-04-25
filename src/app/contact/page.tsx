@@ -403,7 +403,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={loading}
-                      className={`w-full gradient-btn text-white font-semibold px-8 py-4 rounded transition-all duration-200 hover:shadow-xl hover:shadow-tech-blue/20 inline-flex items-center justify-center gap-2 ${loading ? "opacity-70 cursor-not-allowed" : ""}`}
+                      className={`w-full gradient-btn text-white font-semibold px-6 py-3 md:px-8 md:py-4 rounded transition-all duration-200 hover:shadow-xl hover:shadow-tech-blue/20 inline-flex items-center justify-center gap-2 ${loading ? "opacity-70 cursor-not-allowed" : ""}`}
                     >
                       {loading ? (
                         <>
