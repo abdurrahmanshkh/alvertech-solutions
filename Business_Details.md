@@ -86,7 +86,7 @@ Academic & Institutional Expert
 
 ### Profile Summary
 
-Inamdar Bhaisaheb is a distinguished pharmaceutical educator with a remarkable career spanning **35 years of continuous service**. He is an alumnus of **Pravara College of Pharmacy**, where he completed both his **Diploma in Pharmacy** and **Bachelor of Pharmacy**. He dedicated more than three decades to the same institution and contributed significantly to shaping the careers of thousands of pharmacy professionals.
+Inamdar Bhaisaheb is a distinguished pharmaceutical educator with a remarkable career spanning **35 years of continuous service**. He is an alumnus of **Govt. College of Pharmacy, Karad**, where he completed both his **Diploma in Pharmacy** and **Bachelor of Pharmacy**. He dedicated more than three decades to the same institution and contributed significantly to shaping the careers of thousands of pharmacy professionals.
 
 He possesses deep knowledge of the pharmaceutical curriculum and is known for translating complex academic concepts into practical professional foundations. Having witnessed the evolution of the Indian pharmaceutical sector over 35 years, he brings a rare long-term perspective on educational requirements and institutional standards.
 

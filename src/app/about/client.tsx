@@ -82,7 +82,7 @@ const founders = [
     linkedin: "https://www.linkedin.com/in/bhaisaheb-inamdar-711b25402/",
     phone: "+91 70209 92919",
     email: "bbidpham@gmail.com",
-    bio: "Inamdar Bhaisaheb is a distinguished pharmaceutical educator with a remarkable career spanning 35 years of continuous service. He is an alumnus of Pravara College of Pharmacy, where he completed both his Diploma in Pharmacy and Bachelor of Pharmacy.",
+    bio: "Inamdar Bhaisaheb is a distinguished pharmaceutical educator with a remarkable career spanning 35 years of continuous service. He is an alumnus of Govt. College of Pharmacy, Karad, where he completed both his Diploma in Pharmacy and Bachelor of Pharmacy.",
     extendedBio:
       "He dedicated more than three decades to the same institution and contributed significantly to shaping the careers of thousands of pharmacy professionals. Beyond teaching, he is recognized for mentorship, academic rigor, and professional ethics.",
     competencies: [
