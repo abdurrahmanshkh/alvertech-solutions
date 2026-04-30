@@ -20,7 +20,7 @@ const founders = [
     title: "The Architect",
     role: "Facility Design & Sterile Manufacturing Expert",
     years: "35+",
-    yearsLabel: "Years at Cipla",
+    yearsLabel: "Years in Industry Leadership",
     icon: Building2Icon,
     image: "/manoj.jpg",
     linkedin: "https://www.linkedin.com/in/manoj-patel-885a3b61/",
@@ -38,7 +38,7 @@ const founders = [
       "Cross-functional leadership",
     ],
     highlights: [
-      "35 years of experience at Cipla",
+      "35 years at leading Global Pharma MNCs",
       "Worked on 9 USA-based projects",
       "Specialization in sterile injectables, nasal spray, BFS technology, MDI, DPI",
     ],

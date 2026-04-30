@@ -382,7 +382,7 @@ He has extensive end-to-end project execution experience, from conceptual design
 
 ### Key Career Highlights
 
-* 35 years of experience in Cipla
+* 35 years of experience in leading Global Pharma MNCs
 * Conceptualizing, designing, and execution of projects
 * Worked on 9 USA-based projects
 * Facility designing, commissioning, and execution
